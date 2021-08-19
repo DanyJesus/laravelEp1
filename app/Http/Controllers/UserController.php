@@ -19,7 +19,7 @@ class UserController extends Controller
         $user = User::where('id', 1)->first(); //buscar no banco de dados
         //dd($user);//debugar
        return view('listUser', [
-           'userList' =>$user
+           'user' =>$user
        ]);
     }
 }
